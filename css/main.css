@@ -24,7 +24,7 @@ body {
           }
 
 .emphasis{
-  font-weight:700;
+  font-weight:500;
 }
 
 a:link{
@@ -40,7 +40,7 @@ a:link{
 a:visited{
   color: #333;
   text-decoration: none;
-  border-bottom: 1px solid #da5334;
+  border-bottom: 2px solid #d3238a;
 }
 
 a:hover{
@@ -58,6 +58,15 @@ h2{
   /*color: #D3238A;*/
 }
 
+h3{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  Font-Size: 17px;
+  line-height: 1.6;
+  color: #d3238a;
+  padding: 0;
+}
+
 .center{
   text-align: center;
 }
@@ -65,6 +74,8 @@ h2{
 .caption{
   font-size: 13px;
 }
+
+
 
 /* STRUCTURAL ELEMENTS */
 /* Container for the entire page*/
@@ -121,7 +132,7 @@ h2{
   --margin-gutter-side: calc(var(--padding-sides) * -2);
   max-width: 50%;
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   padding:  1rem;
 }
 
@@ -259,7 +270,7 @@ h1{
   text-align: center;
   font-family: "Open Sans", sans-serif;
   Font-Size: 1rem;
-  line-height: 1.4;
+  line-height: 1.8;
   padding-bottom: 50px;
 }
 
@@ -333,6 +344,13 @@ a.special-link:hover{
 
 .right-aligned{
   right: -70%;
+}
+
+.video{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* PERSONAL STORIES */
@@ -549,7 +567,8 @@ a.special-link:hover{
 }
 
 .about{
-  font-size: 16px;
+  font-size: 15px;
+  
 }
 
 /* MOBILE */
@@ -576,6 +595,7 @@ a.special-link:hover{
     --margin-text-side: 0px;
     --margin-gutter-side: 0px;
     max-width: 65ch;
+    
   }
 
   .block--left {
@@ -586,12 +606,23 @@ a.special-link:hover{
   .block--right {
     float: none;
     margin-left: 0px;
-    margin-right: 0px;  }
+    margin-right: 0px;
+  
+  }
   
   .flower{
       display:none;
     }
 }
+
+@media screen and (max-width: 767px) { 
+            
+            .offset-step { 
+                width: 80vw !important;
+                font-size: .95rem !important;
+                text-align: left !important; 
+            }
+        }
 
 /* TABLET */
 @media (min-width: 546px) and (max-width: 768px) {
@@ -639,3 +670,28 @@ a.special-link:hover{
   }
   
 }
+
+@media screen and (min-width:768px) and (max-width: 1023px) { 
+            #my-wrapper-offset { 
+                margin-left: 45vw; width: 55vw;
+                
+            } 
+            .offset-step { 
+                text-align: left !important;
+                margin-left: -42vw !important; width: 35vw !important;
+                box-shadow: none !important;
+            }
+        }
+
+/*DESKTOP*/
+@media screen and (min-width: 1024px) { 
+            #my-wrapper-offset { 
+                margin-left: 35vw; width: 65vw;
+                
+            } 
+            .offset-step { 
+                text-align: left !important;
+                margin-left: -30vw !important; width: 25vw !important;
+                box-shadow: none !important; 
+            }
+        }
